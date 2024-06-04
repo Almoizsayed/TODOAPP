@@ -1,8 +1,8 @@
-const header = { color: "blue" };
+import "../CSS/Style.css";
 export default function () {
   return (
     <div>
-      <h1 style={header}>Almoiz you are doing Fantastic</h1>
+      <h1 className="header">Almoiz you are doing Fantastic</h1>
     </div>
   );
 }
