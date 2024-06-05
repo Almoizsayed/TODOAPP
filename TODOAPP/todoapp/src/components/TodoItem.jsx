@@ -5,12 +5,15 @@ export default function TodoItem({ item, todos, setTodos }) {
 
     setTodos(todos.filter((todo) => todo !== item));
   }
+  function handleClick() {
+    console.log("Item text Clicked");
+  }
 
   return (
     <div className={styles.item}>
       {" "}
       <div className={styles.itemName}>
-        {item}{" "}
+        <span onClick={handleClick}> {item.name}</span>{" "}
         <span>
           {" "}
           <button
